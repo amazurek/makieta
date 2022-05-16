@@ -12,7 +12,9 @@
                   <div class="col-sm">
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Kod</span
                         >
                       </div>
@@ -27,7 +29,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Nazwa</span
                         >
                       </div>
@@ -42,7 +46,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Kod entsoe</span
                         >
                       </div>
@@ -57,7 +63,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Typ</span
                         >
                       </div>
@@ -72,7 +80,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Paliwo</span
                         >
                       </div>
@@ -89,7 +99,9 @@
                   <div class="col-sm">
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Kod Elektrowni</span
                         >
                       </div>
@@ -104,7 +116,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Nazwa Elektrowni</span
                         >
                       </div>
@@ -119,7 +133,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Kod entsoe El</span
                         >
                       </div>
@@ -134,7 +150,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Adres</span
                         >
                       </div>
@@ -149,7 +167,9 @@
                     </div>
                     <div class="input-group input-group-sm mb-1">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm1"
+                        <span
+                          class="input-group-text"
+                          id="inputGroup-sizing-sm1"
                           >Współrzędne GPS</span
                         >
                       </div>
@@ -230,12 +250,11 @@
         <!--div class="container"-->
         <div class="row">
           <div class="col-sm">
-            <button class="btn btn-success btn-sm">Dodaj nową wersję</button>
+            <button class="btn btn-success btn-sm" (click) = "nowaWersja()"> Dodaj nową wersję</button>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm">
-          </div>
+          <div class="col-sm"></div>
           <div class="col-sm">
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
@@ -243,18 +262,12 @@
                   >Data od*</span
                 >
               </div>
-              <mat-form-field appearance="fill">
-              <mat-label>Choose a date</mat-label>
-              <input matInput [matDatepicker]="picker">
-              <mat-hint>MM/DD/YYYY</mat-hint>
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field>
+
               <input
                 type="text"
                 class="form-control"
-                placeholder="brak"
-                [(ngModel)]="params.dataOd"
+                placeholder=""
+                [(ngModel)]="dataOd"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm1"
               />
@@ -270,17 +283,16 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="brak"
+                placeholder=""
                 [(ngModel)]="dataDo"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
           </div>
-          <div class="col-sm">
-          </div>
+          <div class="col-sm"></div>
         </div>
-        <br>
+        <br />
         <div class="row">
           <div class="col-sm">
             <div class="input-group input-group-sm mb-1">
@@ -314,7 +326,7 @@
               />
             </div>
           </div>
-         
+
           <div class="col-sm">
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
@@ -331,7 +343,7 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			 <div class="input-group input-group-sm mb-1">
+            <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Moc Min Brutto</span
@@ -346,7 +358,7 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-						 <div class="input-group input-group-sm mb-1">
+            <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Moc Max Brutto Cieplna</span
@@ -361,8 +373,8 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			<div class="input-group input-group-sm mb-1">
-			<div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Średnia sprawność</span
                 >
@@ -376,8 +388,8 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			<div class="input-group input-group-sm mb-1">
-						<div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Udział biomasy</span
                 >
@@ -391,8 +403,8 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			<div class="input-group input-group-sm mb-1">
-			<div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Część stała</span
                 >
@@ -406,8 +418,8 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			<div class="input-group input-group-sm mb-1">
-						<div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   >Część Zmienna</span
                 >
@@ -421,137 +433,206 @@
                 aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			
           </div>
           <div class="col-sm">
-            			<div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Znacznik Aktywności</span>
+                  >Znacznik Aktywności</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.znacznikAktywnosci" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.znacznikAktywnosci"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
               />
             </div>
-			<div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Średnie Optimum Tech.</span>
+                  >Średnie Optimum Tech.</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.srednieOptimumTechniczne" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.srednieOptimumTechniczne"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
               />
-            </div>			
-			<div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+            </div>
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Średnia Sprawność Optymalna</span>
+                  >Średnia Sprawność Optymalna</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.sredniaSprawnoscOptymalna" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.sredniaSprawnoscOptymalna"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
               />
-            </div>	
+            </div>
             <div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Rampa Góra</span>
+                  >Rampa Góra</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.rampaGora" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
-            </div>	
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.rampaGora"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Rampa Dół</span>
+                  >Rampa Dół</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.rampaDol" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
-            </div>	
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.rampaDol"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Pozostałe Koszty Zmienne</span>
+                  >Pozostałe Koszty Zmienne</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.pozostaleKosztyZmienne" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
-            </div>		
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.pozostaleKosztyZmienne"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
-			  <div class="input-group-prepend">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
-                  >Opłata przesyłowa</span>
+                  >Opłata przesyłowa</span
+                >
               </div>
-              <input type="text"
-                class="form-control" placeholder="brak"
-                [(ngModel)]="params.oplataPrzesylowa" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
-            </div>	
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.oplataPrzesylowa"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
           </div>
           <div class="col-sm">
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxFCRd</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxFCRd" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
-                  <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxFCRg</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxFCRg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
-                        <div class="input-group input-group-sm mb-1">
-              <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxaFRRd</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxaFRRd" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxFCRd</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wolumenMaxFCRd"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxaFRRg</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxaFRRg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxFCRg</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wolumenMaxFCRg"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxmFRRd</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxmFRRd" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxaFRRd</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wolumenMaxaFRRd"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
             <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >wolumenMaxmFRRg</span>
-                    </div>
-                    <input type="text"
-                      class="form-control" placeholder="brak"
-                      [(ngModel)]="params.wolumenMaxmFRRg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>	
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxaFRRg</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wolumenMaxaFRRg"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxmFRRd</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wolumenMaxmFRRd"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >wolumenMaxmFRRg</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                style="background-color:yellow"
+                [(ngModel)]="params.wolumenMaxmFRRg"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
           </div>
         </div>
         <!--/div-->

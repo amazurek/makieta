@@ -22,6 +22,11 @@ export class AppComponent {
   dataOd = '2022-04-31';
   dataDo = '2022-05-29';
 
+nowaWersja(){
+  this.dataOd = '';
+  this.dataDo = '';
+}
+
   constructor() {
     this.params.setParams(
       new Date('2021-01-01'),
