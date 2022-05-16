@@ -1,6 +1,6 @@
 export class Params {
   trybPracy: string;
-  własciciel: string;
+  wlasciciel: string;
   magazyn: string;
   sztolnia: string;
   pompy: string;
@@ -29,7 +29,7 @@ export class Params {
 
   public setParams(
     trybPracy: string,
-    własciciel: string,
+    wlasciciel: string,
     magazyn: string,
     sztolnia: string,
     pompy: string,
@@ -57,7 +57,7 @@ export class Params {
     oplataPrzesylowa: number
   ) {
     this.trybPracy = trybPracy;
-    this.własciciel = własciciel;
+    this.wlasciciel = wlasciciel;
     this.magazyn = magazyn;
     this.sztolnia = sztolnia;
     this.pompy = pompy;

@@ -24,6 +24,13 @@ export class AppComponent {
 
   constructor() {
     this.params.setParams(
+      'Regularna praca',
+      'PGE',
+      '',
+      '',
+      '',
+      '',
+      135,
       1,
       2,
       3,

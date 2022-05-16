@@ -219,51 +219,85 @@
     <div class="card">
       <div class="card-body">
         <h6 class="card-subtitle mb-2">Parametry</h6>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <button class="btn btn-success btn-sm">Dodaj nową wersję</button>
-            </div>
-            <div class="col-sm">
-              <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm"
-                    >Data od*</span
-                  >
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="brak"
-                  [(ngModel)]="dataOd"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                />
-              </div>
-            </div>
-            <div class="col-sm">
-              <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm"
-                    >Data do*</span
-                  >
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="brak"
-                  [(ngModel)]="dataDo"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-sm"
-                />
-              </div>
-            </div>
-            <div class="col-sm"></div>
-            <div class="col-sm"></div>
+        <!--div class="container"-->
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-success btn-sm">Dodaj nową wersję</button>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Tryb</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.trybPracy"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Właścieiel</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="params.wlasciciel"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Data od*</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="dataOd"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="input-group input-group-sm mb-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  >Data do*</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="brak"
+                [(ngModel)]="dataDo"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+          </div>
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+        </div>
+        <!--/div-->
 
-        <div class="input-group mb-3">
+        <!--div class="input-group mb-3">
           <label class="input-group-text" for="inputGroupSelect01"
             >Options</label
           >
@@ -273,7 +307,7 @@
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
-        </div>
+        </div-->
       </div>
     </div>
   </div>
