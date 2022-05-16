@@ -11,9 +11,10 @@ export class AppComponent  {
   kodentsoe:string = "19W000000000017D";
   typ:string = "Elektrownia cieplna";
   paliwo:string = "węgiel brunatny";
+  napiecie:string = "220";
   kodElektrowni = "BEL";
-  nawzaElektrowni = "BEL";
-  kodEntsoweElektrowni = "19W000000000016F";
+  nazwaElektrowni = "Bełchatów";
+  kodEntsoweElektrowni = "19W00011111016F";
   adresElektrowni = "";
   gps = "";
 

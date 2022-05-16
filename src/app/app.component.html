@@ -34,34 +34,44 @@
             </div>
                 </div>
                 <div class="col-sm">
-                <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm">Kod</span>
-                </div>
-                <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'kod' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
+                    <div class="input-group input-group-sm mb-1">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Kod Elektrowni</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'kodElektrowni' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
               <div class="input-group input-group-sm mb-1">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Kod</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm">Nazwa Elektrowni</span>
               </div>
-              <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'kod' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'nazwaElektrowni' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="input-group input-group-sm mb-1">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Kod</span>
+              <span class="input-group-text" id="inputGroup-sizing-sm">Kod entsoe El</span>
             </div>
-            <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'kod' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = 'kodEntsoweElektrowni' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-1">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Kod</span>
+            <span class="input-group-text" id="inputGroup-sizing-sm">Adres</span>
           </div>
-          <input type="text" class="form-control" placeholder="BEL 2-01" [(ngModel)] = '' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" class="form-control" placeholder="brak" [(ngModel)] = 'adresElektrowni' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
+        <div class="input-group input-group-sm mb-1">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Współrzędne GPS</span>
+        </div>
+        <input type="text" class="form-control" placeholder="brak" [(ngModel)] = 'gps' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
                 </div>
                
             
               </div>
+                  <div class="row">
+                       <button class="btn btn-success" id="update-btn" styles="width:120px">Aktualizuj</button>
+                  </div>
+
             </div>
 
            
@@ -75,6 +85,44 @@
       <div class="card">
       <div class="card-body">
         <h6 class="card-subtitle mb-2">Wersje</h6>
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data od</th>
+            <th scope="col">Data do</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Data modyfikacji</th>
+            <th scope="col">Akcje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">3</th>
+            <td>2022-05-30</td>
+            <td>2050-05-31</td>
+            <td>Adam Mazurek</td>
+            <td>2022-05-30</td>
+            <td></td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">2</th>
+            <td>2022-04-31</td>
+            <td>2022-05-29</td>
+            <td>Jan Kowalski</td>
+            <td>2020-06-01</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2020-06-01</td>
+            <td>2050-05-31</td>
+            <td>Adam Mazurek</td>
+            <td>2022-04-30</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
       </div>
       </div>
       </div>
@@ -85,6 +133,15 @@
     <div class="card">
     <div class="card-body">
       <h6 class="card-subtitle mb-2">Parametry</h6>
+      <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
     </div>
   </div>
 </div>
