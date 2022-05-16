@@ -1,6 +1,6 @@
 
 input {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 p {
@@ -12,6 +12,8 @@ div {
 #main-card{
   background-color: rgba(170, 245, 241, 0.637);
 }
-label {
-  font-size: 13px;
+span {
+  font-size: 11px;
+  min-width: 100px;
+  text-align: justify;
 }
