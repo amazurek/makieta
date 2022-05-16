@@ -12,11 +12,18 @@ div {
 #main-card{
   background-color: rgba(170, 245, 241, 0.637);
 }
-span {
+#inputGroup-sizing-sm1 {
   font-size: 12px;
   min-width: 120px;
+}
+span {
+  font-size: 12px;
+  min-width: 200px;
   text-align: justify;
 }
+
+
+
 #update-btn {
   width: 120px;;
   text-align: center;
