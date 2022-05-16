@@ -1,4 +1,9 @@
 export class Params {
+  dataOd:Date;
+  dataDo:Date;
+  autor:string;
+  dataModyfikacji:Date;
+
   trybPracy: string;
   wlasciciel: string;
   magazyn: string;
@@ -28,6 +33,10 @@ export class Params {
   oplataPrzesylowa: number;
 
   public setParams(
+    dataOd:Date,
+    dataDo:Date,
+    autor:string,
+    dataModyfikacji:Date,
     trybPracy: string,
     wlasciciel: string,
     magazyn: string,
@@ -56,6 +65,10 @@ export class Params {
     pozostaleKosztyZmienne: number,
     oplataPrzesylowa: number
   ) {
+    this.dataOd = dataOd;
+    this.dataDo = dataDo;
+    this.autor = autor;
+    this.dataModyfikacji = dataModyfikacji;
     this.trybPracy = trybPracy;
     this.wlasciciel = wlasciciel;
     this.magazyn = magazyn;

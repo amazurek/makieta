@@ -24,6 +24,10 @@ export class AppComponent {
 
   constructor() {
     this.params.setParams(
+      new Date('2021-01-01'),
+      new Date('2021-01-01'),
+      'Adam Mazurek',
+      new Date('2021-01-01'),
       'Regularna praca',
       'PGE',
       '',
