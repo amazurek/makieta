@@ -6,3 +6,9 @@ html {
 p {
   font-family: Lato;
 }
+div {
+  background-color: lightblue;
+}
+#main-card{
+  background-color: rgb(200, 173, 230);
+}
