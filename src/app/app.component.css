@@ -1,6 +1,6 @@
 
-html {
-  font-size: 10px;
+input {
+  font-size: 14px;
 }
 
 p {
@@ -10,5 +10,8 @@ div {
   background-color: lightblue;
 }
 #main-card{
-  background-color: rgb(200, 173, 230);
+  background-color: rgba(170, 245, 241, 0.637);
+}
+label {
+  font-size: 13px;
 }
