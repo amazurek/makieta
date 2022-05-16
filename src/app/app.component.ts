@@ -17,7 +17,8 @@ export class AppComponent  {
   kodEntsoweElektrowni = "19W00011111016F";
   adresElektrowni = "";
   gps = "";
-
+  dataOd = "2022-04-31";
+  dataDo = "2022-05-29";
 
 
 
