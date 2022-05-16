@@ -1,6 +1,6 @@
 
 input {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 p {
@@ -13,7 +13,7 @@ div {
   background-color: rgba(170, 245, 241, 0.637);
 }
 span {
-  font-size: 11px;
+  font-size: 12px;
   min-width: 100px;
   text-align: justify;
 }
