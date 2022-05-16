@@ -250,7 +250,9 @@
         <!--div class="container"-->
         <div class="row">
           <div class="col-sm">
-            <button class="btn btn-success btn-sm" (click) = "nowaWersja()"> Dodaj nową wersję</button>
+            <button class="btn btn-success btn-sm" (click)="nowaWersja()">
+              Dodaj nową wersję
+            </button>
           </div>
         </div>
         <div class="row">
@@ -624,6 +626,9 @@
                 >
               </div>
               <input
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="15"
                 type="text"
                 class="form-control"
                 placeholder="brak"
