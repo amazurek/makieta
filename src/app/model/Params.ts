@@ -1,11 +1,11 @@
 export class Params {
-  trybPracy:string;
-własciciel:string;
-magazyn:string
-sztolnia:string
-pompy:string;
-dostawca:string;
-emisyjnosc:number;
+  trybPracy: string;
+  własciciel: string;
+  magazyn: string;
+  sztolnia: string;
+  pompy: string;
+  dostawca: string;
+  emisyjnosc: number;
   mocMaxBrutto: number;
   mocMinBrutto: number;
   mocMaxBruttoCieplna: number;
@@ -28,13 +28,13 @@ emisyjnosc:number;
   oplataPrzesylowa: number;
 
   public setParams(
-    trybPracy:string,
-własciciel:string,
-magazyn:string,
-sztolnia:string,
-pompy:string,
-dostawca:string,
-emisyjnosc:number,
+    trybPracy: string,
+    własciciel: string,
+    magazyn: string,
+    sztolnia: string,
+    pompy: string,
+    dostawca: string,
+    emisyjnosc: number,
     mocMaxBrutto: number,
     mocMinBrutto: number,
     mocMaxBruttoCieplna: number,
@@ -56,6 +56,13 @@ emisyjnosc:number,
     pozostaleKosztyZmienne: number,
     oplataPrzesylowa: number
   ) {
+    this.trybPracy = trybPracy;
+    this.własciciel = własciciel;
+    this.magazyn = magazyn;
+    this.sztolnia = sztolnia;
+    this.pompy = pompy;
+    this.dostawca = dostawca;
+    this.emisyjnosc = emisyjnosc;
     this.mocMaxBrutto = mocMaxBrutto;
     this.mocMinBrutto = mocMinBrutto;
     this.mocMaxBruttoCieplna = mocMaxBruttoCieplna;
