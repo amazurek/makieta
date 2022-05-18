@@ -1,0 +1,31 @@
+input {
+  font-size: 12px;
+}
+
+p {
+  font-family: Lato;
+}
+div {
+  background-color: rgb(201, 238, 245);
+}
+#main-card {
+  background-color: rgb(201, 238, 245);
+}
+#inputGroup-sizing-sm1 {
+  font-size: 12px;
+  min-width: 120px;
+}
+span {
+  font-size: 12px;
+  min-width: 200px;
+  text-align: justify;
+}
+
+#update-btn {
+  width: 120px;
+  text-align: center;
+}
+
+table {
+  font-size: 12px;
+}

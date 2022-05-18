@@ -8,6 +8,7 @@ import { MagazynAttr } from '../model/magazyn-attr';
 })
 export class MagazynyComponent implements OnInit {
   magazynyTbl: MagazynAttr[] = [];
+  selectedMagazyn: MagazynAttr;
   constructor() {}
 
   ngOnInit() {
@@ -43,5 +44,10 @@ export class MagazynyComponent implements OnInit {
         9
       )
     );
+    this.selectedMagazyn = this.magazynyTbl[0];
+  }
+
+  nowaWersja(){
+    
   }
 }
