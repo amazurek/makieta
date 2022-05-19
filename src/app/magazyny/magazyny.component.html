@@ -1,12 +1,12 @@
 <div class="card">
   <div class="card-body" id="main-card">
-    <h6 class="card-subtitle mb-2">Jednostka Fizyczna</h6>
+    <h6 class="card-subtitle mb-2">Magazyn</h6>
     <div>
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-subtitle mb-2">Szczegoły jednostki</h6>
+              <h6 class="card-subtitle mb-2">Szczegoły magazynu</h6>
               <div class="container">
                 <div class="row">
                   <div class="col-sm">
@@ -45,7 +45,7 @@
             <div class="card-body">
               <h6 class="card-subtitle mb-2">Parametry</h6>
               <!--div class="container"-->
-      
+
               <div class="row">
                 <div class="col-sm">
                   <div class="input-group input-group-sm mb-1">
@@ -54,7 +54,7 @@
                         >Data od*</span
                       >
                     </div>
-      
+
                     <input
                       type="text"
                       class="form-control"
@@ -225,8 +225,24 @@
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-sm">
+                  <button
+                    class="btn btn-success btn-sm"
+                    styles="width:120px"
+                    (click)="saveVersion()"
+                  >
+                    Zapisz
+                  </button>
+                </div>
+                <div class="col-sm">
+                  <button class="btn btn-primary btn-sm" styles="width:120px">
+                    Anuluj
+                  </button>
+                </div>
+              </div>
               <!--/div-->
-      
+
               <!--div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01"
                   >Options</label
@@ -241,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-7">
           <div class="card">
             <div class="card-body">
               <h6 class="card-subtitle mb-2">Wersje</h6>
@@ -264,28 +280,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>2022-05-30</td>
-                    <td>2050-05-31</td>
-                    <td>Adam Mazurek</td>
-                    <td>2022-05-30</td>
-                    <td></td>
-                  </tr>
-                  <tr class="table-success">
-                    <th scope="row">2</th>
-                    <td>2022-04-31</td>
-                    <td>2022-05-29</td>
-                    <td>Jan Kowalski</td>
-                    <td>2020-06-01</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>2020-06-01</td>
-                    <td>2050-05-31</td>
-                    <td>Adam Mazurek</td>
-                    <td>2022-04-30</td>
+                  <tr *ngFor="let row of magazynyTbl; index as i">
+                    <td>{{ magazynyTbl.length - i }}</td>
+                    <td>{{ row.data_od }}</td>
+                    <td>{{ row.data_do }}</td>
+                    <td>{{ row.autor }}</td>
+                    <td>{{ row.data_mod }}</td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -295,6 +295,5 @@
         </div>
       </div>
     </div>
-    
   </div>
 </div>

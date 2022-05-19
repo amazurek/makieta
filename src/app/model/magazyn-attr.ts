@@ -2,7 +2,7 @@ export class MagazynAttr {
   kod: string;
   data_od: string;
   data_do: string;
-  data_mod:string;
+  data_mod: string;
   pojemnoscMWh: number;
   zbGornyPoziomEnMin: number;
   zbGornyPoziomEnMax: number;
@@ -19,7 +19,7 @@ export class MagazynAttr {
     data_od: string,
     data_do: string,
     autor: string,
-    data_mod:string;
+    data_mod: string,
     pojemnoscMWh: number,
     zbGornyPoziomEnMin: number,
     zbGornyPoziomEnMax: number,
@@ -45,4 +45,7 @@ export class MagazynAttr {
     this.minIlosc = minIlosc;
     this.maxIlosc = maxIlosc;
   }
+
+
+
 }
