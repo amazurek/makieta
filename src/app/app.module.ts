@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { JednostkiComponent } from './jednostki/jednostki.component';
 import { MagazynyComponent } from './magazyny/magazyny.component';
+import { JednostkiListaComponent } from './jednostki-lista/jednostki-lista.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, JednostkiComponent, MagazynyComponent],
+  declarations: [AppComponent, HelloComponent, JednostkiComponent, MagazynyComponent, JednostkiListaComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
