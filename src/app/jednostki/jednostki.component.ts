@@ -4,10 +4,9 @@ import { Params } from '../model/Params';
 @Component({
   selector: 'app-jednostki',
   templateUrl: './jednostki.component.html',
-  styleUrls: ['./jednostki.component.css']
+  styleUrls: ['./jednostki.component.css'],
 })
 export class JednostkiComponent implements OnInit {
-
   params: Params = new Params();
   kod: string = 'BEL 2-01';
   nazwa: string = 'Bełchatów B01';
@@ -23,13 +22,15 @@ export class JednostkiComponent implements OnInit {
   dataOd = '2022-04-31';
   dataDo = '2022-05-29';
 
-nowaWersja(){
-  this.dataOd = '';
-  this.dataDo = '';
-}
-ngOnInit(){
-  
-}
+  nowaWersja() {
+    this.dataOd = '';
+    this.dataDo = '';
+  }
+  ngOnInit() {}
+
+  www() {
+    console.log('XXXXXX');
+  }
   constructor() {
     this.params.setParams(
       new Date('2021-01-01'),
@@ -65,5 +66,4 @@ ngOnInit(){
       99
     );
   }
-
 }
