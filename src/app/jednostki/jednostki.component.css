@@ -29,3 +29,17 @@ span {
 table {
   font-size: 12px;
 }
+
+
+.btn-edit {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 1px 13px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
