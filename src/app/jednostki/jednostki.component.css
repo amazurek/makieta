@@ -1,6 +1,6 @@
 input {
   font-size: 12px;
-  pointer-events:visibleStroke;
+  pointer-events: visibleStroke;
 }
 
 p {
@@ -31,9 +31,12 @@ table {
   font-size: 12px;
 }
 
+td {
+  text-align: center;
+}
 
 .btn-edit {
-  background-color: #4CAF50; 
+  background-color: #6371f0;
   border: none;
   color: white;
   padding: 1px 13px;
@@ -43,11 +46,13 @@ table {
   display: inline-block;
   font-size: 12px;
   margin-bottom: 3px;
-
+}
+.btn-new {
+  background-color: #4ab121;
 }
 
 .btn-del {
-  background-color: red; 
+  background-color: red;
   border: none;
   color: white;
   padding: 1px 13px;
@@ -57,5 +62,4 @@ table {
   display: inline-block;
   font-size: 12px;
   margin-bottom: 3px;
-
 }

@@ -660,15 +660,15 @@
         <div class="card">
           <div class="card-body" id="main-card">
             <div class="row">
-              <div class="col-md-1">
-            Pompy
+              <div class="col-sm-4">
+            Pompy <button class="btn btn-edit">Edytuj</button>
           </div>
-          <div class="col-md-1">
-            <button class="btn btn-edit">Dodaj</button>
-          
+           <div class="col-sm-2 ">
+              <button class="btn btn-edit btn-new">Dodaj Pompę</button>
           </div>
+
             </div>
-            <div class="row">
+            <!--div class="row">
 
               <div class="col-md-3">
                 <div class="input-group input-group-sm mb-1">
@@ -715,55 +715,36 @@
               <div class="col-sm-1">
                 <button class="btn btn-del">Usuń</button>
               </div>
-          </div>
+          </div-->
           <div class="row">
-            <div class="col-md-3">
-              <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm"
-                    >Kod Pompy</span
-                  >
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  value="DCH1-P2"
-                />
-              </div>
+            <div class="col-sm-6">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Kod pompy</th>
+                    <th scope="col">Maksymalna Moc Pompowania </th>
+                    <th scope="col">Średnia sprawność pompy </th>
+                    <th scope="col">Akcje </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DCH1-P1</td>
+                    <td>88</td>
+                    <td>12</td>
+                    <td><button class="btn btn-edit">Edytuj</button>&#160;<button class="btn btn-del">Usuń</button></td>
+                  </tr>
+                  <tr>
+                    <td>DCH1-P2</td>
+                    <td>99</td>
+                    <td>12</td>
+                    <td><button class="btn btn-edit">Edytuj</button>&#160;<button class="btn btn-del">Usuń</button></td>
+          
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col-md-3">
-              <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm"
-                    >Maksymalna moc pompowania</span
-                  >
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  [(ngModel)]="params.wolumenMaxmFRRd"
-                />
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-sm"
-                    >Średnia sprawność pompy</span
-                  >
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  [(ngModel)]="params.wolumenMaxmFRRd"
-                />
-              </div>
-              
-            </div>
-            <div class="col-sm-1">
-              <button class="btn btn-del">Usuń</button>
-            </div>
-        </div>
+          </div>
 
 
 
