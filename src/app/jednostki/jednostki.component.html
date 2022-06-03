@@ -8,9 +8,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-7">
-                  <b class="card-subtitle mb-2">Dane Ogólne Jednostki</b>&nbsp;<button class="btn btn-edit" *ngIf="parameters_edit_global" (click)="editGlobalParameters()">Edytuj</button>
+                  <b class="card-subtitle mb-2">Dane Ogólne Jednostki</b
+                  >&nbsp;<button
+                    class="btn btn-edit"
+                    *ngIf="parameters_edit_global"
+                    (click)="editGlobalParameters()"
+                  >
+                    Edytuj
+                  </button>
                 </div>
-
               </div>
               <div class="container">
                 <div class="row">
@@ -189,11 +195,20 @@
                 </div>
                 <div class="row">
                   <button
-                    class="btn btn-success btn-sm"
+                    class="btn btn-edit btn-new btn-sm"
                     id="update-btn"
                     styles="width:120px"
+                    *ngif="!edit_global"
                   >
                     Zapisz
+                  </button>
+                  <button
+                    class="btn btn-edit btn-sm"
+                    id="update-btn"
+                    styles="width:120px"
+                    *ngif="!edit_global"
+                  >
+                    Anuluj
                   </button>
                 </div>
               </div>
@@ -249,12 +264,16 @@
     </div>
     <div class="card">
       <div class="card-body">
-        <b class="card-subtitle mb-2">Parametry</b>&nbsp;<button class="btn btn-edit" *ngIf="parameters_edit_global" (click)="editGlobalParameters()">Edytuj</button>
+        <b class="card-subtitle mb-2">Parametry</b>&nbsp;<button
+          class="btn btn-edit"
+          *ngIf="parameters_edit_global"
+          (click)="editGlobalParameters()"
+        >
+          Edytuj
+        </button>
         <!--div class="container"-->
         <div class="row">
-          <div class="col-sm">
-
-          </div>
+          <div class="col-sm"></div>
         </div>
         <div class="row">
           <div class="col-sm"></div>
@@ -659,12 +678,26 @@
           <div class="card-body" id="main-card">
             <div class="row">
               <div class="col-sm-4">
-            Pompy <button class="btn btn-edit" *ngIf="pompa_edit_global" (click)="editGlobal()">Edytuj</button><button class="btn btn-edit" *ngIf="!pompa_edit_global" (click)="editGlobal()">Zamknij edycję</button>
-          </div>
-           <div class="col-sm-2 ">
-              <button *ngIf="!pompa_edit_global"  class="btn btn-edit btn-new">Dodaj Pompę</button>
-          </div>
-
+                Pompy
+                <button
+                  class="btn btn-edit"
+                  *ngIf="pompa_edit_global"
+                  (click)="editGlobal()"
+                >
+                  Edytuj</button
+                ><button
+                  class="btn btn-edit"
+                  *ngIf="!pompa_edit_global"
+                  (click)="editGlobal()"
+                >
+                  Zamknij edycję
+                </button>
+              </div>
+              <div class="col-sm-2">
+                <button *ngIf="!pompa_edit_global" class="btn btn-edit btn-new">
+                  Dodaj Pompę
+                </button>
+              </div>
             </div>
             <!--div class="row">
 
@@ -714,42 +747,61 @@
                 <button class="btn btn-del">Usuń</button>
               </div>
           </div-->
-          <div class="row">
-            <div class="col-sm-6">
-              <table class="table table-sm">
-                <thead>
-                  <tr>
-                    <th scope="col">Kod pompy</th>
-                    <th scope="col">Maksymalna Moc Pompowania </th>
-                    <th scope="col">Średnia sprawność pompy </th>
-                    <th scope="col">Akcje </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>DCH1-P1</td>
-                    <td>88</td>
-                    <td>12</td>
-                    <td><button class="btn btn-edit" *ngIf="!pompa_edit_global">Edytuj</button>&#160;<button class="btn btn-del" *ngIf="!pompa_edit_global">Usuń</button></td>
-                  </tr>
-                  <tr>
-                    <td>DCH1-P2</td>
-                    <td>99</td>
-                    <td>12</td>
-                    <td><button class="btn btn-edit" *ngIf="!pompa_edit_global">Edytuj</button>&#160;<button class="btn btn-del" *ngIf="!pompa_edit_global">Usuń</button></td>
-          
-                  </tr>
-                </tbody>
-              </table>
+            <div class="row">
+              <div class="col-sm-6">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Kod pompy</th>
+                      <th scope="col">Maksymalna Moc Pompowania</th>
+                      <th scope="col">Średnia sprawność pompy</th>
+                      <th scope="col">Akcje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>DCH1-P1</td>
+                      <td>88</td>
+                      <td>12</td>
+                      <td>
+                        <button class="btn btn-edit" *ngIf="!pompa_edit_global">
+                          Edytuj</button
+                        >&#160;<button
+                          class="btn btn-del"
+                          *ngIf="!pompa_edit_global"
+                        >
+                          Usuń
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>DCH1-P2</td>
+                      <td>99</td>
+                      <td>12</td>
+                      <td>
+                        <button class="btn btn-edit" *ngIf="!pompa_edit_global">
+                          Edytuj</button
+                        >&#160;<button
+                          class="btn btn-del"
+                          *ngIf="!pompa_edit_global"
+                        >
+                          Usuń
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-
-
-
           </div>
         </div>
       </div>
-
+      <button class="btn btn-edit" >
+        Zapisz</button
+      >
+      <button class="btn btn-edit" >
+        Anuluj</button
+      >
     </div>
   </div>
 </div>

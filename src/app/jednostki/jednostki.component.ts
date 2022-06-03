@@ -32,6 +32,7 @@ export class JednostkiComponent implements OnInit {
   public editGlobalParameters() {}
 
   public editGlobal() {
+    this.edit_global = !this.edit_global;
     this.pompa_edit_global = !this.pompa_edit_global;
   }
 
