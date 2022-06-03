@@ -11,8 +11,8 @@ export class JednostkiComponent implements OnInit {
   kod: string = 'BEL 2-01';
   nazwa: string = 'Bełchatów B01';
   kodentsoe: string = '19W000000000017D';
-  typ: string = 'Elektrownia cieplna';
-  paliwo: string = 'węgiel brunatny';
+  typ: string = 'Hydrozespół ESP';
+  paliwo: string = 'woda';
   napiecie: string = '220';
   kodElektrowni = 'BEL';
   nazwaElektrowni = 'Bełchatów';
@@ -21,6 +21,8 @@ export class JednostkiComponent implements OnInit {
   gps = '';
   dataOd = '2022-04-31';
   dataDo = '2022-05-29';
+
+  
 
   nowaWersja() {
     this.dataOd = '';
@@ -31,6 +33,9 @@ export class JednostkiComponent implements OnInit {
   www() {
     console.log('XXXXXX');
   }
+
+
+
   constructor() {
     this.params.setParams(
       new Date('2021-01-01'),

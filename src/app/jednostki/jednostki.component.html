@@ -10,9 +10,7 @@
                 <div class="col-md-7">
                   <h6 class="card-subtitle mb-2">Dane Ogólne Jednostki</h6>
                 </div>
-                <div class="col-md-4">
-                  <button class=" btn-edit">Zmień</button>
-                </div>
+
               </div>
               <div class="container">
                 <div class="row">
@@ -28,7 +26,6 @@
                       <input
                         type="text"
                         class="form-control"
-
                         [(ngModel)]="kod"
                         aria-label=""
                         aria-describedby="inputGroup-sizing-sm"
@@ -79,7 +76,6 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="BEL 2-01"
                         [(ngModel)]="typ"
                         aria-label=""
                         aria-describedby="inputGroup-sizing-sm"
@@ -661,7 +657,120 @@
             <option value="3">Three</option>
           </select>
         </div-->
+        <div class="card">
+          <div class="card-body" id="main-card">
+            <div class="row">
+              <div class="col-md-1">
+            Pompy
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-edit">Dodaj</button>
+          
+          </div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="input-group input-group-sm mb-1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"
+                      >Kod Pompy</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="DCH1-P1"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="input-group input-group-sm mb-1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"
+                      >Maksymalna moc pompowania</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="params.wolumenMaxmFRRd"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="input-group input-group-sm mb-1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"
+                      >Średnia sprawność pompy</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="params.wolumenMaxmFRRd"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-1">
+                <button class="btn btn-del">Usuń</button>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm"
+                    >Kod Pompy</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="DCH1-P2"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm"
+                    >Maksymalna moc pompowania</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="params.wolumenMaxmFRRd"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group input-group-sm mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm"
+                    >Średnia sprawność pompy</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="params.wolumenMaxmFRRd"
+                />
+              </div>
+              
+            </div>
+            <div class="col-sm-1">
+              <button class="btn btn-del">Usuń</button>
+            </div>
+        </div>
+
+
+
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
