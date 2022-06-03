@@ -22,18 +22,15 @@ export class JednostkiComponent implements OnInit {
   dataOd = '2022-04-31';
   dataDo = '2022-05-29';
 
-  pompa_new: boolean = false;
-  pompa_item_edit: boolean = false;
-
   edit_global: boolean = true;
-  pompa_edit_global: boolean = true;
   parameters_edit_global: boolean = true;
 
-  public editGlobalParameters() {}
+  public editGlobalParameters() {
+    this.parameters_edit_global = !this.parameters_edit_global;
+  }
 
   public editGlobal() {
     this.edit_global = !this.edit_global;
-    this.pompa_edit_global = !this.pompa_edit_global;
   }
 
   nowaWersja() {
