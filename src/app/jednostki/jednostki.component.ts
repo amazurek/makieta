@@ -22,7 +22,18 @@ export class JednostkiComponent implements OnInit {
   dataOd = '2022-04-31';
   dataDo = '2022-05-29';
 
-  
+  pompa_new: boolean = false;
+  pompa_item_edit: boolean = false;
+
+  edit_global: boolean = true;
+  pompa_edit_global: boolean = true;
+  parameters_edit_global: boolean = true;
+
+  public editGlobalParameters() {}
+
+  public editGlobal() {
+    this.pompa_edit_global = !this.pompa_edit_global;
+  }
 
   nowaWersja() {
     this.dataOd = '';
@@ -33,8 +44,6 @@ export class JednostkiComponent implements OnInit {
   www() {
     console.log('XXXXXX');
   }
-
-
 
   constructor() {
     this.params.setParams(

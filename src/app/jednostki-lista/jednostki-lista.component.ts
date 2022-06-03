@@ -11,16 +11,7 @@ export class JednostkiListaComponent implements OnInit {
   fieldName2:string = 'par1';
 
 
-  pompa_new:boolean = false;
-  pompa_item_edit:boolean = false;
-  pompa_item_del:boolean = false;
-  pompa_edit_global:boolean = true;
-  pompa_close_edit_global:boolean = false;
-
-  public editGlobal(){
-    this.pompa_close_edit_global = true;
-    this.pompa_new = true;
-  }
+  
 
   constructor() {
     this.jadnTbl[0] = { param1: 'Bełchatów B02', param2: '19W000000000017D', param3:'Jednostka cieplna',param4:'węgiel brunatny', param5:'BEL' , param6:'Bełchatów' };

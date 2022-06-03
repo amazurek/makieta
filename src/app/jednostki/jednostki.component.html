@@ -8,7 +8,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-7">
-                  <h6 class="card-subtitle mb-2">Dane Ogólne Jednostki</h6>
+                  <b class="card-subtitle mb-2">Dane Ogólne Jednostki</b>&nbsp;<button class="btn btn-edit" *ngIf="parameters_edit_global" (click)="editGlobalParameters()">Edytuj</button>
                 </div>
 
               </div>
@@ -193,7 +193,7 @@
                     id="update-btn"
                     styles="width:120px"
                   >
-                    Aktualizuj
+                    Zapisz
                   </button>
                 </div>
               </div>
@@ -249,13 +249,11 @@
     </div>
     <div class="card">
       <div class="card-body">
-        <h6 class="card-subtitle mb-2">Parametry</h6>
+        <b class="card-subtitle mb-2">Parametry</b>&nbsp;<button class="btn btn-edit" *ngIf="parameters_edit_global" (click)="editGlobalParameters()">Edytuj</button>
         <!--div class="container"-->
         <div class="row">
           <div class="col-sm">
-            <button class="btn btn-success btn-sm" (click)="nowaWersja()">
-              Dodaj nową wersję
-            </button>
+
           </div>
         </div>
         <div class="row">
@@ -661,10 +659,10 @@
           <div class="card-body" id="main-card">
             <div class="row">
               <div class="col-sm-4">
-            Pompy <button class="btn btn-edit">Edytuj</button>
+            Pompy <button class="btn btn-edit" *ngIf="pompa_edit_global" (click)="editGlobal()">Edytuj</button><button class="btn btn-edit" *ngIf="!pompa_edit_global" (click)="editGlobal()">Zamknij edycję</button>
           </div>
            <div class="col-sm-2 ">
-              <button class="btn btn-edit btn-new">Dodaj Pompę</button>
+              <button *ngIf="!pompa_edit_global"  class="btn btn-edit btn-new">Dodaj Pompę</button>
           </div>
 
             </div>
@@ -732,13 +730,13 @@
                     <td>DCH1-P1</td>
                     <td>88</td>
                     <td>12</td>
-                    <td><button class="btn btn-edit">Edytuj</button>&#160;<button class="btn btn-del">Usuń</button></td>
+                    <td><button class="btn btn-edit" *ngIf="!pompa_edit_global">Edytuj</button>&#160;<button class="btn btn-del" *ngIf="!pompa_edit_global">Usuń</button></td>
                   </tr>
                   <tr>
                     <td>DCH1-P2</td>
                     <td>99</td>
                     <td>12</td>
-                    <td><button class="btn btn-edit">Edytuj</button>&#160;<button class="btn btn-del">Usuń</button></td>
+                    <td><button class="btn btn-edit" *ngIf="!pompa_edit_global">Edytuj</button>&#160;<button class="btn btn-del" *ngIf="!pompa_edit_global">Usuń</button></td>
           
                   </tr>
                 </tbody>
