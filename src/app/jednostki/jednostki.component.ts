@@ -33,6 +33,16 @@ export class JednostkiComponent implements OnInit {
     this.edit_global = !this.edit_global;
   }
 
+  public saveParameters() {
+    this.parameters_edit_global = !this.parameters_edit_global;
+  }
+  
+
+  public save() {
+    this.edit_global = !this.edit_global;
+  }
+  
+
   nowaWersja() {
     this.dataOd = '';
     this.dataDo = '';

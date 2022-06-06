@@ -198,7 +198,8 @@
                     class="btn btn-edit btn-new btn-sm"
                     id="update-btn"
                     styles="width:120px"
-                    *ngif="!edit_global"
+                    *ngIf="!edit_global"
+                    (click)="save()"
                   >
                     Zapisz
                   </button>
@@ -206,7 +207,8 @@
                     class="btn btn-edit btn-sm"
                     id="update-btn"
                     styles="width:120px"
-                    *ngif="!edit_global"
+                    *ngIf="!edit_global"
+                    (click)="save()"
                   >
                     Anuluj
                   </button>
@@ -218,7 +220,13 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-subtitle mb-2">Wersje</h6>
+              <b>Wersje</b>&nbsp;<button
+                class="btn btn-edit"
+                *ngIf="edit_global && parameters_edit_global"
+                (click)="editGlobalParameters()"
+              >
+                Nowa Wersja
+              </button>
               <table class="table">
                 <thead>
                   <tr>
@@ -266,7 +274,7 @@
       <div class="card-body">
         <b class="card-subtitle mb-2">Parametry</b>&nbsp;<button
           class="btn btn-edit"
-          *ngIf="parameters_edit_global"
+          *ngIf="edit_global && parameters_edit_global"
           (click)="editGlobalParameters()"
         >
           Edytuj
@@ -677,11 +685,12 @@
         <div class="card">
           <div class="card-body" id="main-card">
             <div class="row">
-              <div class="col-sm-4">
-                Pompy
-              </div>
+              <div class="col-sm-4">Pompy</div>
               <div class="col-sm-2">
-                <button *ngIf="!parameters_edit_global" class="btn btn-edit btn-new">
+                <button
+                  *ngIf="!parameters_edit_global"
+                  class="btn btn-edit btn-new"
+                >
                   Dodaj Pompę
                 </button>
               </div>
@@ -751,7 +760,10 @@
                       <td>88</td>
                       <td>12</td>
                       <td>
-                        <button class="btn btn-edit" *ngIf="!parameters_edit_global">
+                        <button
+                          class="btn btn-edit"
+                          *ngIf="!parameters_edit_global"
+                        >
                           Edytuj</button
                         >&#160;<button
                           class="btn btn-del"
@@ -766,7 +778,10 @@
                       <td>99</td>
                       <td>12</td>
                       <td>
-                        <button class="btn btn-edit" *ngIf="!parameters_edit_global">
+                        <button
+                          class="btn btn-edit"
+                          *ngIf="!parameters_edit_global"
+                        >
                           Edytuj</button
                         >&#160;<button
                           class="btn btn-del"
@@ -785,15 +800,24 @@
       </div>
       <div class="row">
         <div class="col-sm-5"></div>
-          <div class="col-sm-1">
-      <button *ngIf="!parameters_edit_global" class="btn btn-edit btn-new" >
-        Zapisz</button
-      >
-          </div>
-          <div class="col-sm-1">
-      <button class="btn btn-edit" *ngIf="!parameters_edit_global"  >
-        Anuluj</button
-      ></div>
+        <div class="col-sm-1">
+          <button
+            *ngIf="!parameters_edit_global"
+            class="btn btn-edit btn-new"
+            (click)="saveParameters()"
+          >
+            Zapisz
+          </button>
+        </div>
+        <div class="col-sm-1">
+          <button
+            class="btn btn-edit"
+            *ngIf="!parameters_edit_global"
+            (click)="saveParameters()"
+          >
+            Anuluj
+          </button>
+        </div>
       </div>
     </div>
   </div>
