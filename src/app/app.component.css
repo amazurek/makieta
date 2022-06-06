@@ -1,0 +1,11 @@
+.menuLeft {
+  background: #0f4e8a;
+
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.menuUp {
+  height: 60px;
+  background: #0f4e8a;
+}
