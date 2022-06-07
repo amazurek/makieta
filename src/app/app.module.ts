@@ -11,6 +11,7 @@ import { JednostkiListaComponent } from './jednostki-lista/jednostki-lista.compo
 import { AppRoutingModule } from './app-routing.module';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [];
 
@@ -19,6 +20,7 @@ const routes: Routes = [];
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    CommonModule,
     MatTableModule,
     MatListModule,
   ],
