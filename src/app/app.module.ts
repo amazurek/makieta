@@ -10,11 +10,13 @@ import { MagazynyComponent } from './magazyny/magazyny.component';
 import { JednostkiListaComponent } from './jednostki-lista/jednostki-lista.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+
 
 const routes: Routes = [];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, MatListModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, MatListModule,MatTableModule],
 
   declarations: [
     AppComponent,
