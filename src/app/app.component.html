@@ -1,5 +1,15 @@
 <div class="row">
-  <div class="col-sm-1 menuLeft"></div>
+  <div class="col-sm-1 menuLeft">
+    <nav>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Item 1</mat-list-item>
+        <mat-list-item role="listitem">Item 2</mat-list-item>
+        <mat-list-item role="listitem">Item 3</mat-list-item>
+      </mat-list>
+      <a routerLink="/">Scenariusze</a>
+      <a routerLink="/mainpage">Main page</a>
+    </nav>
+  </div>
   <div class="col">
     <div class="row menuUp">
       <div class="col-sm-5"></div>
@@ -18,13 +28,14 @@
         </div>
       </div>
     </div>
-    <app-jednostki-lista></app-jednostki-lista>
+    <router-outlet></router-outlet>
+    <!--<app-jednostki-lista></app-jednostki-lista>
     <br />
     <br />
     <app-jednostki></app-jednostki>
 
     <br />
     <br />
-    <app-magazyny></app-magazyny>
+    <app-magazyny></app-magazyny>-->
   </div>
 </div>

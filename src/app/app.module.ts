@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router'; 
+import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -8,10 +8,21 @@ import { HelloComponent } from './hello.component';
 import { JednostkiComponent } from './jednostki/jednostki.component';
 import { MagazynyComponent } from './magazyny/magazyny.component';
 import { JednostkiListaComponent } from './jednostki-lista/jednostki-lista.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MatListModule } from '@angular/material/list';
+
+const routes: Routes = [];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppR],
-  declarations: [AppComponent, HelloComponent, JednostkiComponent, MagazynyComponent, JednostkiListaComponent],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, MatListModule],
+
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    JednostkiComponent,
+    MagazynyComponent,
+    JednostkiListaComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
