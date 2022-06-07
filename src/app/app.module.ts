@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -9,7 +10,7 @@ import { MagazynyComponent } from './magazyny/magazyny.component';
 import { JednostkiListaComponent } from './jednostki-lista/jednostki-lista.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppR],
   declarations: [AppComponent, HelloComponent, JednostkiComponent, MagazynyComponent, JednostkiListaComponent],
   bootstrap: [AppComponent],
 })
