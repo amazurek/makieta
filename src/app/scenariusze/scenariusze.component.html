@@ -81,17 +81,17 @@
             <th scope="col">Autor</th>
             <th scope="col">Otwarty przez</th>
             <th scope="col">Data modyfikacji</th>
-            <th scope="col">Akcje</th>
+            <th scope="col">Akcje {{scenariusze[0].name}} </th>
           </tr>
         </thead>
 
         <tbody>
-          <tr *ngFor="let row of scenariusze">
-            <td>{{ row.name }}</td>
-            <td>{{ row.data_od }}</td>
-            <td>{{ row.data_do }}</td>
-            <td>{{ row.autor }}</td>
-            <td>{{ row.data_mod }}</td>
+          <tr *ngfor='let row1 of scenariusze'>
+            <td>{{scenariusze[0].name}}</td>
+            <td>{{ row1.data_od }}</td>
+            <td>{{ row1.data_do }}</td>
+            <td>{{ row1.autor }}</td>
+            <td>{{ row1.data_mod }}</td>
             <td></td>
           </tr>
         </tbody>
