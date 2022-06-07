@@ -4,7 +4,7 @@ export interface PeriodicElement {
   id:number;
   name: string;
   data_od: Date;
-
+  data_do: Date;
 }
 export interface Element {
   name: string;
@@ -20,17 +20,28 @@ export interface Element {
 
 
 export class ScenariuszeComponent implements OnInit {
+
+
+
   isplayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
   constructor() { }
   
 
   
-   scenariusze:PeriodicElement[] = [{
+   scenariusze = [{
     id:1,
     name:"Scenariusz Adama",
-    data_od: new Date('2022-07-08')
-  }];
+    data_od: new Date('2022-07-08'),
+    data_do: new Date('2022-07-09')
+  },
+  {
+    id:2,
+    name:"Scenariusz Adama",
+    data_od: new Date('2022-07-08'),
+    data_do: new Date('2022-07-09')
+  }
+];
 
   ngOnInit() {
   }
