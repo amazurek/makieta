@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { CommonModule } from '@angular/common';
-
+import { ScenariuszeComponent } from './scenariusze/scenariusze.component';
 const routes: Routes = [];
 
 @NgModule({
@@ -20,7 +20,6 @@ const routes: Routes = [];
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    CommonModule,
     MatTableModule,
     MatListModule,
   ],
@@ -31,6 +30,7 @@ const routes: Routes = [];
     JednostkiComponent,
     MagazynyComponent,
     JednostkiListaComponent,
+    ScenariuszeComponent,
   ],
   bootstrap: [AppComponent],
 })
