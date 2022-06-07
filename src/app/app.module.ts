@@ -12,11 +12,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 
-
 const routes: Routes = [];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, MatListModule,MatTableModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    MatTableModule,
+    MatListModule,
+  ],
 
   declarations: [
     AppComponent,
