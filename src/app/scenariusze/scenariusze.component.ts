@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 
 @Component({
@@ -12,25 +13,14 @@ export class ScenariuszeComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private data:DataService) { }
   
 
   
-   scenariusze = [{
-    id:1,
-    name:"Scenariusz Adama",
-    data_od: new Date('2022-07-08'),
-    data_do: new Date('2022-07-09')
-  },
-  {
-    id:2,
-    name:"Scenariusz Adama",
-    data_od: new Date('2022-07-08'),
-    data_do: new Date('2022-07-09')
-  }
-];
+   scenariusze = [];
 
   ngOnInit() {
+    this.scenariusze = this.data.getScenariusze();
   }
 
   

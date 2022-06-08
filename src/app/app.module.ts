@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { CommonModule } from '@angular/common';
 import { ScenariuszeComponent } from './scenariusze/scenariusze.component';
+import { DataService } from './services/data.service';
 const routes: Routes = [];
 
 @NgModule({
@@ -33,5 +34,6 @@ const routes: Routes = [];
     ScenariuszeComponent,
   ],
   bootstrap: [AppComponent],
+  providers:[DataService]
 })
 export class AppModule {}

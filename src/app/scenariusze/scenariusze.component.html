@@ -75,18 +75,36 @@
             <th scope="col">Autor</th>
             <th scope="col">Otwarty przez</th>
             <th scope="col">Data modyfikacji</th>
-            <th scope="col">Akcje {{ scenariusze[0].name }}</th>
+            <th scope="col">Akcje</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr *ngIf="true">
-            <td>{{ scenariusze[0].name }}</td>
+          <tr *ngFor="let i of scenariusze">
+            <td>{{ i.name }}</td>
+            <td>{{ i.data_od.toLocaleDateString() }}</td>
+            <td>{{ i.data_do.toLocaleDateString() }}</td>
+            <td>{{i.autor}}</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{{ i.data_mod.toLocaleDateString() }}</td>
+            <td>                  <button
+              class="btn btn-edit btn-new btn-sm"
+              styles="width:120px"
+            >
+              Otwórz
+            </button>&nbsp;<button
+            class="btn btn-edit  btn-sm"
+            styles="width:120px"
+          >
+            Edytuj
+          </button>
+        &nbsp;<button
+        class="btn btn-edit btn-del btn-sm"
+        styles="width:120px"
+      >
+        Usuń
+      </button>
+        </td>
           </tr>
         </tbody>
       </table>
