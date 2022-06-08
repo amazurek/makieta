@@ -10,7 +10,9 @@
         ><a class="link" routerLink="/">Magazyny</a></mat-list-item
       >
       <mat-list-item role="listitem"
-        ><a class="link" routerLink="/scenariusze">Scenariusze</a></mat-list-item
+        ><a class="link" routerLink="/scenariusze"
+          >Scenariusze</a
+        ></mat-list-item
       >
     </mat-list>
   </div>
@@ -18,15 +20,15 @@
     <div class="row menuUp">
       <div class="col-sm-5"></div>
       <div class="col-sm-4" style="color:white;">
-        <div class="card scen">
+        <div *ngIf="isScenariuszSelected" class="card scen">
           <div class="row">
             <div class="col-sm-4">
-              <span class="scen_label"><strong>Scenariusz Adam </strong></span>
+              <span class="scen_label"><strong>Scenariusz Adam</strong></span>
             </div>
             <div class="col-sm-7">
               <button class="btn btn-edit">Przełącz</button>&nbsp;
               <button class="btn btn-edit btn-new">Uruchom</button>&nbsp;
-              <button class="btn btn-edit">Zamknij</button>
+              <button class="btn btn-edit" (click)="closeScenariusz()">Zamknij</button>
             </div>
           </div>
         </div>

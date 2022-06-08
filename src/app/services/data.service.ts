@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class DataService {
-  selectedScenariusz:any;
+  selectedScenariusz: any;
   constructor() {}
-
+  public isScenariuszSelected: BehaviorSubject<boolean> =
+    new BehaviorSubject<boolean>(false);
   getScenariusze() {
     return [
       {
         id: 1,
-        name: 'Scenariusz Adama',
+        name: 'Scenariusz Jarka',
         data_od: new Date('2022-07-08'),
         data_do: new Date('2022-07-09'),
         autor: 'Adam Mazurek',
@@ -25,5 +27,8 @@ export class DataService {
       },
     ];
   }
-  
+
+  selectScenariusz(selected: any) {
+    this.selectedScenariusz = selected;
+  }
 }
